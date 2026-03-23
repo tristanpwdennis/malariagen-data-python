@@ -439,7 +439,6 @@ class AnophelesHetAnalysis(
 
         # Extract sample IDs from cohort dataframe
         sample_ids = df_cohort_samples["sample_id"].values
-        sample_id_to_idx = {sid: idx for idx, sid in enumerate(sample_ids)}
 
         debug("access SNPs for all cohort samples")
         # Load SNP data once for all samples in cohort
@@ -450,6 +449,10 @@ class AnophelesHetAnalysis(
             chunks=chunks,
             inline_array=inline_array,
         )
+
+        # Subset to cohort samples to ensure correct indexing
+        ds_snps = ds_snps.set_index(samples="sample_id").sel(samples=sample_ids)
+        sample_id_to_idx = {sid: idx for idx, sid in enumerate(sample_ids)}
 
         # SNP positions (same for all samples)
         pos = ds_snps["variant_position"].values
@@ -470,18 +473,17 @@ class AnophelesHetAnalysis(
         )
 
         # access genotypes for all samples
-        gt = allel.GenotypeDaskArray(ds_snps["call_genotype"].data)
-
-        # compute het across all samples: shape (variants, samples)
-        debug("Compute heterozygous genotypes for all samples")
-        with self._dask_progress(desc="Compute heterozygous genotypes"):
-            is_het_all = gt.is_het().compute()
+        gt_data = ds_snps["call_genotype"].data
 
         # Compute windowed heterozygosity for each sample and cache results
         results = {}
         for sample_id, sample_idx in sample_id_to_idx.items():
-            # Extract heterozygosity column for this sample
-            is_het_sample = is_het_all[:, sample_idx]
+            # Compute heterozygous genotypes for this sample only to avoid
+            # materializing the full (variants, samples) array in memory.
+            debug(f"Compute heterozygous genotypes for sample {sample_id}")
+            gt_sample = allel.GenotypeDaskVector(gt_data[:, sample_idx, :])
+            with self._dask_progress(desc="Compute heterozygous genotypes"):
+                is_het_sample = gt_sample.is_het().compute()
 
             # compute windowed heterozygosity for this sample
             counts = allel.moving_statistic(
@@ -910,7 +912,7 @@ class AnophelesHetAnalysis(
             # Compute per-sample means and aggregate.
             het_values = []
             for sample_id in df_cohort_samples["sample_id"]:
-                windows, counts = cohort_het_results[sample_id]
+                _, counts = cohort_het_results[sample_id]
                 het_mean = np.mean(counts / window_size)
                 het_values.append(het_mean)
 

@@ -281,8 +281,10 @@ def test_cohort_count_het_vectorized_regression(fixture, api: AnophelesHetAnalys
 
     # Get sample metadata for a small cohort
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    # Use first few samples to keep test fast
-    df_cohort_samples = df_samples.head(min(3, len(df_samples))).reset_index(drop=True)
+    # Use a small, non-trivial subset of samples (fixed random_state for reproducibility)
+    df_cohort_samples = df_samples.sample(
+        n=min(3, len(df_samples)), random_state=0
+    ).reset_index(drop=True)
 
     # Parse region once
     region_prepped = _parse_single_region(api, region)
