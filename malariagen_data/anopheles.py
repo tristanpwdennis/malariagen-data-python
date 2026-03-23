@@ -14,6 +14,7 @@ from numpydoc_decorator import doc  # type: ignore
 
 
 from .anoph import (
+    aim_params,
     base_params,
     dash_params,
     gplt_params,
@@ -109,6 +110,8 @@ class AnophelesDataResource(
         cohorts_analysis: Optional[str],
         aim_analysis: Optional[str],
         aim_metadata_dtype: Optional[Mapping[str, Any]],
+        aim_ids: Optional[aim_params.aim_ids],
+        aim_palettes: Optional[aim_params.aim_palettes],
         site_filters_analysis: Optional[str],
         discordant_read_calls_analysis: Optional[str],
         default_site_mask: Optional[str],
@@ -152,6 +155,8 @@ class AnophelesDataResource(
             cohorts_analysis=cohorts_analysis,
             aim_analysis=aim_analysis,
             aim_metadata_dtype=aim_metadata_dtype,
+            aim_ids=aim_ids,
+            aim_palettes=aim_palettes,
             site_filters_analysis=site_filters_analysis,
             discordant_read_calls_analysis=discordant_read_calls_analysis,
             default_site_mask=default_site_mask,
