@@ -1,6 +1,7 @@
 import random
 
 import bokeh.models
+import numpy as np
 import pandas as pd
 import pytest
 from pytest_cases import parametrize_with_cases
@@ -260,3 +261,73 @@ def test_cohort_heterozygosity(fixture, api: AnophelesHetAnalysis):
     assert (df["n_samples"] > 0).all()
     assert (df["mean_heterozygosity"] >= 0).all()
     assert (df["mean_heterozygosity"] <= 1).all()
+
+
+@parametrize_with_cases("fixture,api", cases=".")
+def test_cohort_count_het_vectorized_regression(fixture, api: AnophelesHetAnalysis):
+    """Regression test: vectorized method produces identical results to sequential method.
+
+    This test verifies that the _cohort_count_het_vectorized() method produces
+    numerically identical heterozygosity values as the sequential per-sample approach.
+    """
+    from malariagen_data.util import _parse_single_region
+    from malariagen_data.anoph import base_params
+
+    # Set up test parameters.
+    all_sample_sets = api.sample_sets()["sample_set"].to_list()
+    sample_set = random.choice(all_sample_sets)
+    region = random.choice(api.contigs)
+    window_size = 20_000
+
+    # Get sample metadata for a small cohort
+    df_samples = api.sample_metadata(sample_sets=sample_set)
+    # Use first few samples to keep test fast
+    df_cohort_samples = df_samples.head(min(3, len(df_samples))).reset_index(drop=True)
+
+    # Parse region once
+    region_prepped = _parse_single_region(api, region)
+
+    # Method 1: use vectorized method
+    vectorized_results = api._cohort_count_het_vectorized(
+        region=region_prepped,
+        df_cohort_samples=df_cohort_samples,
+        sample_sets=sample_set,
+        window_size=window_size,
+        site_mask=api._default_site_mask,
+        chunks=base_params.native_chunks,
+        inline_array=True,
+    )
+
+    # Method 2: compute using the traditional sequential method for comparison
+    sequential_results = {}
+
+    for sample_id in df_cohort_samples["sample_id"]:
+        df_het = api.sample_count_het(
+            sample=sample_id,
+            region=region_prepped,
+            window_size=window_size,
+            site_mask=api._default_site_mask,
+            sample_set=sample_set,
+        )
+        sequential_results[sample_id] = df_het["heterozygosity"].values
+
+    # Verify both methods produce identical results
+    for sample_id in df_cohort_samples["sample_id"]:
+        windows, counts = vectorized_results[sample_id]
+
+        # Convert vectorized counts to heterozygosity
+        vectorized_het = counts / window_size
+
+        # Get sequential heterozygosity
+        sequential_het = sequential_results[sample_id]
+
+        # Check shapes match
+        assert (
+            len(vectorized_het) == len(sequential_het)
+        ), f"Shape mismatch for sample {sample_id}: vectorized={len(vectorized_het)}, sequential={len(sequential_het)}"
+
+        # Check values are numerically identical (within floating point precision)
+        assert np.allclose(vectorized_het, sequential_het, rtol=1e-10), (
+            f"Values differ for sample {sample_id}. "
+            f"Max difference: {np.max(np.abs(vectorized_het - sequential_het))}"
+        )
