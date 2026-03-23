@@ -186,6 +186,8 @@ class Ag3(AnophelesDataResource):
             cohorts_analysis=cohorts_analysis,
             aim_analysis=aim_analysis,
             aim_metadata_dtype=AIM_METADATA_DTYPE,
+            aim_ids=("gambcolu_vs_arab", "gamb_vs_colu"),
+            aim_palettes=AIM_PALETTES,
             site_filters_analysis=site_filters_analysis,
             discordant_read_calls_analysis=discordant_read_calls_analysis,
             default_site_mask="gamb_colu_arab",
