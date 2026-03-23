@@ -424,7 +424,7 @@ class TestSurveillanceFlagsBaseFallback:
         assert isinstance(df, pd.DataFrame)
         assert list(df.columns) == ["sample_id", "is_surveillance"]
         assert df["sample_id"].dtype == object
-        assert str(df["is_surveillance"].dtype) == "boolean"
+        assert pd.api.types.is_bool_dtype(df["is_surveillance"])
         assert len(df) == 0
 
     def test_sample_set_has_surveillance_data_returns_false_when_fallback(
