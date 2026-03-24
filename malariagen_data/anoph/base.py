@@ -134,7 +134,7 @@ class AnophelesBase:
             storage_options = dict()
         try:
             self._fs, self._base_path = _init_filesystem(self._url, **storage_options)
-        except Exception as exc:  # pragma: no cover
+        except (OSError, ImportError) as exc:  # pragma: no cover
             raise IOError(
                 "An error occurred establishing a connection to the storage system. Please see the nested exception for more details."
             ) from exc
@@ -143,7 +143,7 @@ class AnophelesBase:
         try:
             with self.open_file(self._config_path) as f:
                 self._config = json.load(f)
-        except Exception as exc:  # pragma: no cover
+        except (OSError, json.JSONDecodeError) as exc:  # pragma: no cover
             if (isinstance(exc, OSError) and "forbidden" in str(exc).lower()) or (
                 getattr(exc, "status", None) == 403
             ):
