@@ -1,32 +1,14 @@
 """Tests for Region.__repr__ and CacheMiss.__repr__ / default message."""
-import importlib.util as ilu
-import sys
 
-# Load malariagen_data/util.py directly, bypassing the package __init__.py
-# which has heavy transitive imports (bokeh, plotly, etc.).
-_spec = ilu.spec_from_file_location(
-    "malariagen_data.util",
-    "malariagen_data/util.py",
-)
-_util = ilu.module_from_spec(_spec)
-sys.modules["malariagen_data.util"] = _util
+import pytest
 
-try:
-    _spec.loader.exec_module(_util)
-except Exception:
-    # If util.py itself can't be loaded (missing deps), fall back to a
-    # normal import so the tests still work in a fully-installed env.
-    import malariagen_data.util as _util  # type: ignore[assignment]
-
-Region = _util.Region
-CacheMiss = _util.CacheMiss
-
-import pytest  # noqa: E402
+from malariagen_data.util import CacheMiss, Region
 
 
 # ---------------------------------------------------------------------------
 # Region
 # ---------------------------------------------------------------------------
+
 
 def test_region_repr_contig_only():
     r = Region("2L")
@@ -54,6 +36,7 @@ def test_region_repr_start_only():
 # ---------------------------------------------------------------------------
 # CacheMiss
 # ---------------------------------------------------------------------------
+
 
 def test_cache_miss_no_key():
     cm = CacheMiss()
