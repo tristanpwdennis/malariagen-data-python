@@ -570,6 +570,9 @@ class Region:
             and (self.end == other.end)
         )
 
+    def __repr__(self):
+        return f"Region({self._contig!r}, {self._start!r}, {self._end!r})"
+
     def __str__(self):
         out = self._contig
         if self._start is not None or self._end is not None:
@@ -904,7 +907,20 @@ def _jitter(a, fraction):
 
 
 class CacheMiss(Exception):
-    pass
+    """Raised when a requested item is not present in the cache."""
+
+    def __init__(self, key=None):
+        self.key = key
+        if key is not None:
+            message = f"Cache miss for key: {key!r}"
+        else:
+            message = "Cache miss: requested item not found in cache."
+        super().__init__(message)
+
+    def __repr__(self):
+        if self.key is not None:
+            return f"CacheMiss({self.key!r})"
+        return "CacheMiss()"
 
 
 class LoggingHelper:
