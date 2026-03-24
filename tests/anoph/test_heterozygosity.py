@@ -264,10 +264,10 @@ def test_cohort_heterozygosity(fixture, api: AnophelesHetAnalysis):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_cohort_count_het_vectorized_regression(fixture, api: AnophelesHetAnalysis):
-    """Regression test: vectorized method produces identical results to sequential method.
+def test_cohort_count_het_regression(fixture, api: AnophelesHetAnalysis):
+    """Regression test: cohort method produces identical results to sequential method.
 
-    This test verifies that the _cohort_count_het_vectorized() method produces
+    This test verifies that the cohort_count_het() method produces
     numerically identical heterozygosity values as the sequential per-sample approach.
     """
     from malariagen_data.util import _parse_single_region
@@ -290,7 +290,7 @@ def test_cohort_count_het_vectorized_regression(fixture, api: AnophelesHetAnalys
     region_prepped = _parse_single_region(api, region)
 
     # Method 1: use vectorized method
-    vectorized_results = api._cohort_count_het_vectorized(
+    cohort_results = api.cohort_count_het(
         region=region_prepped,
         df_cohort_samples=df_cohort_samples,
         sample_sets=sample_set,
@@ -315,21 +315,21 @@ def test_cohort_count_het_vectorized_regression(fixture, api: AnophelesHetAnalys
 
     # Verify both methods produce identical results
     for sample_id in df_cohort_samples["sample_id"]:
-        windows, counts = vectorized_results[sample_id]
+        windows, counts = cohort_results[sample_id]
 
-        # Convert vectorized counts to heterozygosity
-        vectorized_het = counts / window_size
+        # Convert cohort counts to heterozygosity
+        cohort_het = counts / window_size
 
         # Get sequential heterozygosity
         sequential_het = sequential_results[sample_id]
 
         # Check shapes match
         assert (
-            len(vectorized_het) == len(sequential_het)
-        ), f"Shape mismatch for sample {sample_id}: vectorized={len(vectorized_het)}, sequential={len(sequential_het)}"
+            len(cohort_het) == len(sequential_het)
+        ), f"Shape mismatch for sample {sample_id}: cohort={len(cohort_het)}, sequential={len(sequential_het)}"
 
         # Check values are numerically identical (within floating point precision)
-        assert np.allclose(vectorized_het, sequential_het, rtol=1e-10), (
+        assert np.allclose(cohort_het, sequential_het, rtol=1e-10), (
             f"Values differ for sample {sample_id}. "
-            f"Max difference: {np.max(np.abs(vectorized_het - sequential_het))}"
+            f"Max difference: {np.max(np.abs(cohort_het - sequential_het))}"
         )

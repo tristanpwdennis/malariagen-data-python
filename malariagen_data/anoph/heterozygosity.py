@@ -395,7 +395,7 @@ class AnophelesHetAnalysis(
 
         return sample_id, sample_set, windows, counts
 
-    def _cohort_count_het_vectorized(
+    def cohort_count_het(
         self,
         region: Region,
         df_cohort_samples: pd.DataFrame,
@@ -405,11 +405,12 @@ class AnophelesHetAnalysis(
         chunks: base_params.chunks,
         inline_array: base_params.inline_array,
     ):
-        """Vectorized computation of windowed heterozygosity for multiple samples.
+        """Compute windowed heterozygosity counts for multiple samples in a cohort.
 
-        Loads SNP data once for all cohort samples, then computes heterozygosity
-        across all samples efficiently, rather than calling snp_calls() repeatedly
-        for each sample.
+        This method efficiently computes heterozygosity for all samples by loading
+        SNP data once and computing across all samples, rather than calling snp_calls()
+        repeatedly for each sample. This vectorized approach provides substantial
+        performance improvements for large cohorts.
 
         Parameters
         ----------
@@ -896,10 +897,10 @@ class AnophelesHetAnalysis(
             )
             n_samples = len(df_cohort_samples)
 
-            # Compute heterozygosity for all samples in the cohort using vectorized method.
-            # This loads SNP data once and computes heterozygosity across all samples,
-            # yielding substantial speedup over sequential per-sample processing.
-            cohort_het_results = self._cohort_count_het_vectorized(
+            # Compute heterozygosity for all samples in the cohort using cohort_count_het().
+            # This public method loads SNP data once and computes across all samples,
+            # providing substantial speedup over sequential per-sample processing.
+            cohort_het_results = self.cohort_count_het(
                 region=region_prepped,
                 df_cohort_samples=df_cohort_samples,
                 sample_sets=sample_sets,
