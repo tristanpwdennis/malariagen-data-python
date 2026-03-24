@@ -67,12 +67,15 @@ class AnophelesSnpData(
         self._default_site_mask = default_site_mask
 
         # Set up caches.
-        # TODO review type annotations here, maybe can tighten
-        self._cache_snp_sites = None
-        self._cache_snp_genotypes: Dict = dict()
-        self._cache_site_filters: Dict = dict()
-        self._cache_site_annotations = None
-        self._cache_locate_site_class: Dict = dict()
+        self._cache_snp_sites: Optional[zarr.hierarchy.Group] = None
+        self._cache_snp_genotypes: Dict[base_params.sample_set, zarr.hierarchy.Group] = (
+            dict()
+        )
+        self._cache_site_filters: Dict[base_params.site_mask, zarr.hierarchy.Group] = (
+            dict()
+        )
+        self._cache_site_annotations: Optional[zarr.hierarchy.Group] = None
+        self._cache_locate_site_class: Dict[Tuple[Any, ...], np.ndarray] = dict()
 
         # Create the SNP-calls cache as a per-instance lru_cache wrapping the
         # bound method.  Storing it on the instance (rather than using a
@@ -108,7 +111,7 @@ class AnophelesSnpData(
         self,
         *,
         site_mask: base_params.site_mask,
-    ) -> base_params.site_mask:
+    ) -> str:
         if site_mask == base_params.DEFAULT:
             # Use whatever is the default site mask for this data resource.
             assert self._default_site_mask is not None
@@ -122,7 +125,7 @@ class AnophelesSnpData(
         self,
         *,
         site_mask: Optional[base_params.site_mask],
-    ) -> Optional[base_params.site_mask]:
+    ) -> Optional[str]:
         if site_mask is None:
             # This is allowed, it means don't apply any site mask to the data.
             return None
@@ -214,7 +217,7 @@ class AnophelesSnpData(
         field: base_params.field,
         inline_array: base_params.inline_array,
         chunks: base_params.chunks,
-    ):
+    ) -> da.Array:
         if contig in self.virtual_contigs:
             contigs = self.virtual_contigs[contig]
             arrs = [
@@ -245,7 +248,7 @@ class AnophelesSnpData(
         field: base_params.field,
         inline_array: base_params.inline_array,
         chunks: base_params.chunks,
-    ):
+    ) -> da.Array:
         d = self._site_filters_for_contig(
             contig=region.contig,
             mask=mask,
@@ -579,7 +582,7 @@ class AnophelesSnpData(
         contig: base_params.contig,
         inline_array: base_params.inline_array,
         chunks: base_params.chunks,
-    ):
+    ) -> xr.Dataset:
         if contig in self.virtual_contigs:
             contigs = self.virtual_contigs[contig]
             datasets = []
@@ -652,7 +655,7 @@ class AnophelesSnpData(
         site_mask: Optional[base_params.site_mask] = None,
         inline_array: base_params.inline_array = base_params.inline_array_default,
         chunks: base_params.chunks = base_params.native_chunks,
-    ):
+    ) -> xr.Dataset:
         # Normalise parameters.
         regions: List[Region] = _parse_multi_region(self, region)
         del region
@@ -789,7 +792,7 @@ class AnophelesSnpData(
         site_class: base_params.site_class,
         inline_array: base_params.inline_array = base_params.inline_array_default,
         chunks: base_params.chunks = base_params.native_chunks,
-    ):
+    ) -> np.ndarray:
         # Cache these data in memory to avoid repeated computation.
         cache_key = (region, site_mask, site_class)
 
@@ -1111,12 +1114,12 @@ class AnophelesSnpData(
         self,
         *,
         regions: Tuple[Region, ...],
-        sample_sets,
-        site_mask,
-        site_class,
-        inline_array,
-        chunks,
-    ):
+        sample_sets: Optional[Tuple[str, ...]],
+        site_mask: Optional[str],
+        site_class: Optional[base_params.site_class],
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> xr.Dataset:
         # Access SNP calls and concatenate multiple sample sets and/or regions.
         with self._spinner("Access SNP calls"):
             lx = []
@@ -1180,17 +1183,17 @@ class AnophelesSnpData(
         self,
         *,
         regions: Tuple[Region, ...],
-        sample_sets,
-        sample_indices,
-        site_mask,
-        site_class,
-        cohort_size,
-        min_cohort_size,
-        max_cohort_size,
-        random_seed,
-        inline_array,
-        chunks,
-    ):
+        sample_sets: Optional[Tuple[str, ...]],
+        sample_indices: Optional[Tuple[int, ...]],
+        site_mask: Optional[str],
+        site_class: Optional[base_params.site_class],
+        cohort_size: Optional[base_params.cohort_size],
+        min_cohort_size: Optional[base_params.min_cohort_size],
+        max_cohort_size: Optional[base_params.max_cohort_size],
+        random_seed: base_params.random_seed,
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> xr.Dataset:
         ## Get SNP calls and concatenate multiple sample sets and/or regions.
 
         # Note: sample_sets should be "prepared" before being passed to this private function.
@@ -1305,18 +1308,18 @@ class AnophelesSnpData(
     def _snp_allele_counts(
         self,
         *,
-        region,
-        sample_sets,
-        sample_indices,
-        site_mask,
-        site_class,
-        cohort_size,
-        min_cohort_size,
-        max_cohort_size,
-        random_seed,
-        inline_array,
-        chunks,
-    ):
+        region: Union[dict, List[dict]],
+        sample_sets: Optional[Tuple[str, ...]],
+        sample_indices: Optional[Tuple[int, ...]],
+        site_mask: Optional[str],
+        site_class: Optional[base_params.site_class],
+        cohort_size: Optional[base_params.cohort_size],
+        min_cohort_size: Optional[base_params.min_cohort_size],
+        max_cohort_size: Optional[base_params.max_cohort_size],
+        random_seed: base_params.random_seed,
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> Dict[str, np.ndarray]:
         # Access SNP calls.
         ds_snps = self.snp_calls(
             region=region,
@@ -2007,22 +2010,22 @@ class AnophelesSnpData(
     def _biallelic_diplotypes(
         self,
         *,
-        region,
-        sample_sets,
-        sample_indices,
-        site_mask,
-        site_class,
-        cohort_size,
-        min_cohort_size,
-        max_cohort_size,
-        random_seed,
-        max_missing_an,
-        min_minor_ac,
-        n_snps,
-        thin_offset,
-        inline_array,
-        chunks,
-    ):
+        region: Union[dict, List[dict]],
+        sample_sets: Optional[Tuple[str, ...]],
+        sample_indices: Optional[Tuple[int, ...]],
+        site_mask: Optional[str],
+        site_class: Optional[base_params.site_class],
+        cohort_size: Optional[base_params.cohort_size],
+        min_cohort_size: Optional[base_params.min_cohort_size],
+        max_cohort_size: Optional[base_params.max_cohort_size],
+        random_seed: base_params.random_seed,
+        max_missing_an: Optional[base_params.max_missing_an],
+        min_minor_ac: Optional[base_params.min_minor_ac],
+        n_snps: Optional[base_params.n_snps],
+        thin_offset: base_params.thin_offset,
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> Dict[str, np.ndarray]:
         # Note: this function uses sample_indices and should not expect a sample_query.
 
         # Access biallelic SNPs.
