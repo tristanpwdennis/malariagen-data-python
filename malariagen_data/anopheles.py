@@ -178,46 +178,46 @@ class AnophelesDataResource(
         )
 
     def _get_xpehh_gwss_cache_name(self):
-        """Safe resolver for xpehh gwss cache name.
+        """Safely resolve the xpehh gwss cache name.
 
-        Subclasses may define _xpehh_gwss_cache_name as a class attribute.
-        This method safely retrieves it or returns a default if unavailable.
+        Supports class attribute, property, or legacy method override.
+        Falls back to the default "xpehh_gwss_v1" if resolution fails.
+
+        See also: https://github.com/malariagen/malariagen-data-python/issues/1151
         """
         try:
-            # Try to get the cache name from the instance (respects MRO)
-            cache_name = getattr(self, "_xpehh_gwss_cache_name")
-            # Validate it's actually a string, not a descriptor or other object
-            if not isinstance(cache_name, str):
-                raise TypeError(
-                    f"_xpehh_gwss_cache_name must resolve to a string, "
-                    f"got {type(cache_name).__name__}"
-                )
-            return cache_name
-        except (AttributeError, TypeError):
-            # Fallback to a generic cache name if subclass hasn't defined one
-            # or if the attribute isn't a proper string
-            return "xpehh_gwss_v1"
+            name = self._xpehh_gwss_cache_name
+            # Handle legacy case where _xpehh_gwss_cache_name might be a
+            # callable method rather than a property or class attribute.
+            if callable(name):
+                name = name()
+            if isinstance(name, str) and len(name) > 0:
+                return name
+        except NotImplementedError:
+            pass
+        # Fallback to default.
+        return "xpehh_gwss_v1"
 
     def _get_ihs_gwss_cache_name(self):
-        """Safe resolver for ihs gwss cache name.
+        """Safely resolve the ihs gwss cache name.
 
-        Subclasses may define _ihs_gwss_cache_name as a class attribute.
-        This method safely retrieves it or returns a default if unavailable.
+        Supports class attribute, property, or legacy method override.
+        Falls back to the default "ihs_gwss_v1" if resolution fails.
+
+        See also: https://github.com/malariagen/malariagen-data-python/issues/1151
         """
         try:
-            # Try to get the cache name from the instance (respects MRO)
-            cache_name = getattr(self, "_ihs_gwss_cache_name")
-            # Validate it's actually a string, not a descriptor or other object
-            if not isinstance(cache_name, str):
-                raise TypeError(
-                    f"_ihs_gwss_cache_name must resolve to a string, "
-                    f"got {type(cache_name).__name__}"
-                )
-            return cache_name
-        except (AttributeError, TypeError):
-            # Fallback to a generic cache name if subclass hasn't defined one
-            # or if the attribute isn't a proper string
-            return "ihs_gwss_v1"
+            name = self._ihs_gwss_cache_name
+            # Handle legacy case where _ihs_gwss_cache_name might be a
+            # callable method rather than a property or class attribute.
+            if callable(name):
+                name = name()
+            if isinstance(name, str) and len(name) > 0:
+                return name
+        except NotImplementedError:
+            pass
+        # Fallback to default.
+        return "ihs_gwss_v1"
 
     @staticmethod
     def _make_gene_cnv_label(gene_id, gene_name, cnv_type):

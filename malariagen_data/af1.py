@@ -77,6 +77,8 @@ class Af1(AnophelesDataResource):
 
     """
 
+    _xpehh_gwss_cache_name = XPEHH_GWSS_CACHE_NAME
+    _ihs_gwss_cache_name = IHS_GWSS_CACHE_NAME
     _roh_hmm_cache_name = ROH_HMM_CACHE_NAME
 
     def __init__(
