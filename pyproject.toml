@@ -121,7 +121,7 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 norecursedirs = [".git", ".venv", "venv", "*.egg-info", "build", "dist"]
-addopts = "-v --tb=short"
+addopts = "--tb=short --ignore=tests/integration"
 filterwarnings = [
     "ignore::DeprecationWarning:numpy",
     "ignore::DeprecationWarning:dask",
