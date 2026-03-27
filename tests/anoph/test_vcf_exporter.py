@@ -148,3 +148,49 @@ def test_vcf_exporter_gzip(fixture, api: VcfExporter, tmp_path):
     with gzip.open(output_path, "rt") as f:
         first_line = f.readline()
     assert first_line.strip() == "##fileformat=VCFv4.3"
+
+
+@parametrize_with_cases("fixture,api", cases=".")
+def test_vcf_exporter_fields(fixture, api: VcfExporter, tmp_path):
+    region = api.contigs[0]
+
+    # Test with additional FORMAT fields.
+    output_path = str(tmp_path / "test_fields.vcf")
+    api.snp_calls_to_vcf(
+        output_path=output_path,
+        region=region,
+        fields=("GT", "GQ"),
+    )
+
+    with open(output_path) as f:
+        lines = f.readlines()
+
+    # Check FORMAT header lines.
+    format_lines = [line for line in lines if line.startswith("##FORMAT")]
+    assert len(format_lines) == 2
+    assert any("ID=GT" in line for line in format_lines)
+    assert any("ID=GQ" in line for line in format_lines)
+
+    # Check FORMAT column value.
+    data_lines = [line for line in lines if not line.startswith("#")]
+    assert len(data_lines) > 0
+    first_data = data_lines[0].strip().split("\t")
+    assert first_data[8] == "GT:GQ"
+
+    # Each sample field should have two colon-separated values.
+    for sample_val in first_data[9:]:
+        parts = sample_val.split(":")
+        assert len(parts) == 2, f"Expected GT:GQ, got {sample_val!r}"
+
+
+@parametrize_with_cases("fixture,api", cases=".")
+def test_vcf_exporter_fields_gt_required(fixture, api: VcfExporter, tmp_path):
+    region = api.contigs[0]
+    output_path = str(tmp_path / "test_no_gt.vcf")
+
+    with pytest.raises(ValueError, match="GT must be included"):
+        api.snp_calls_to_vcf(
+            output_path=output_path,
+            region=region,
+            fields=("GQ",),
+        )
