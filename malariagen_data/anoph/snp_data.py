@@ -111,7 +111,7 @@ class AnophelesSnpData(
         self,
         *,
         site_mask: base_params.site_mask,
-    ) -> str:
+    ) -> base_params.site_mask:
         if site_mask == base_params.DEFAULT:
             # Use whatever is the default site mask for this data resource.
             assert self._default_site_mask is not None
@@ -125,7 +125,7 @@ class AnophelesSnpData(
         self,
         *,
         site_mask: Optional[base_params.site_mask],
-    ) -> Optional[str]:
+    ) -> Optional[base_params.site_mask]:
         if site_mask is None:
             # This is allowed, it means don't apply any site mask to the data.
             return None
@@ -1113,9 +1113,9 @@ class AnophelesSnpData(
     def _raw_snp_calls(
         self,
         *,
-        regions: Tuple[Region, ...],
-        sample_sets: Optional[Tuple[str, ...]],
-        site_mask: Optional[str],
+        regions: base_params.regions_tuple,
+        sample_sets: Optional[base_params.sample_sets_tuple],
+        site_mask: Optional[base_params.site_mask],
         site_class: Optional[base_params.site_class],
         inline_array: base_params.inline_array,
         chunks: base_params.chunks,
@@ -1182,10 +1182,10 @@ class AnophelesSnpData(
     def _snp_calls(
         self,
         *,
-        regions: Tuple[Region, ...],
-        sample_sets: Optional[Tuple[str, ...]],
-        sample_indices: Optional[Tuple[int, ...]],
-        site_mask: Optional[str],
+        regions: base_params.regions_tuple,
+        sample_sets: Optional[base_params.sample_sets_tuple],
+        sample_indices: Optional[base_params.sample_indices_tuple],
+        site_mask: Optional[base_params.site_mask],
         site_class: Optional[base_params.site_class],
         cohort_size: Optional[base_params.cohort_size],
         min_cohort_size: Optional[base_params.min_cohort_size],
@@ -1309,9 +1309,9 @@ class AnophelesSnpData(
         self,
         *,
         region: Union[dict, List[dict]],
-        sample_sets: Optional[Tuple[str, ...]],
-        sample_indices: Optional[Tuple[int, ...]],
-        site_mask: Optional[str],
+        sample_sets: Optional[base_params.sample_sets_tuple],
+        sample_indices: Optional[base_params.sample_indices_tuple],
+        site_mask: Optional[base_params.site_mask],
         site_class: Optional[base_params.site_class],
         cohort_size: Optional[base_params.cohort_size],
         min_cohort_size: Optional[base_params.min_cohort_size],
