@@ -8,12 +8,12 @@ from pytest_cases import parametrize_with_cases
 from malariagen_data import af1 as _af1
 from malariagen_data import ag3 as _ag3
 
-from malariagen_data.anoph.to_vcf import VcfExporter
+from malariagen_data.anoph.to_vcf import SnpVcfExporter
 
 
 @pytest.fixture
 def ag3_sim_api(ag3_sim_fixture):
-    return VcfExporter(
+    return SnpVcfExporter(
         url=ag3_sim_fixture.url,
         public_url=ag3_sim_fixture.url,
         config_path=_ag3.CONFIG_PATH,
@@ -40,7 +40,7 @@ def ag3_sim_api(ag3_sim_fixture):
 
 @pytest.fixture
 def af1_sim_api(af1_sim_fixture):
-    return VcfExporter(
+    return SnpVcfExporter(
         url=af1_sim_fixture.url,
         public_url=af1_sim_fixture.url,
         config_path=_af1.CONFIG_PATH,
@@ -65,7 +65,7 @@ def case_af1_sim(af1_sim_fixture, af1_sim_api):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_vcf_exporter(fixture, api: VcfExporter, tmp_path):
+def test_vcf_exporter(fixture, api: SnpVcfExporter, tmp_path):
     region = random.choice(api.contigs)
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
     sample_sets = random.sample(all_sample_sets, min(2, len(all_sample_sets)))
@@ -120,7 +120,7 @@ def test_vcf_exporter(fixture, api: VcfExporter, tmp_path):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_vcf_exporter_overwrite(fixture, api: VcfExporter, tmp_path):
+def test_vcf_exporter_overwrite(fixture, api: SnpVcfExporter, tmp_path):
     region = api.contigs[0]
     output_path = str(tmp_path / "test.vcf")
 
@@ -137,7 +137,7 @@ def test_vcf_exporter_overwrite(fixture, api: VcfExporter, tmp_path):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_vcf_exporter_gzip(fixture, api: VcfExporter, tmp_path):
+def test_vcf_exporter_gzip(fixture, api: SnpVcfExporter, tmp_path):
     region = api.contigs[0]
     output_path = str(tmp_path / "test.vcf.gz")
 
@@ -151,7 +151,7 @@ def test_vcf_exporter_gzip(fixture, api: VcfExporter, tmp_path):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_vcf_exporter_fields(fixture, api: VcfExporter, tmp_path):
+def test_vcf_exporter_fields(fixture, api: SnpVcfExporter, tmp_path):
     region = api.contigs[0]
 
     # Test with additional FORMAT fields.
@@ -184,7 +184,7 @@ def test_vcf_exporter_fields(fixture, api: VcfExporter, tmp_path):
 
 
 @parametrize_with_cases("fixture,api", cases=".")
-def test_vcf_exporter_fields_gt_required(fixture, api: VcfExporter, tmp_path):
+def test_vcf_exporter_fields_gt_required(fixture, api: SnpVcfExporter, tmp_path):
     region = api.contigs[0]
     output_path = str(tmp_path / "test_no_gt.vcf")
 

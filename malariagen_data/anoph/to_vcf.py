@@ -21,7 +21,7 @@ _FORMAT_HEADERS = {
 }
 
 
-class VcfExporter(
+class SnpVcfExporter(
     AnophelesSnpData,
 ):
     def __init__(
