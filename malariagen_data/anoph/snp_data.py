@@ -68,12 +68,12 @@ class AnophelesSnpData(
 
         # Set up caches.
         self._cache_snp_sites: Optional[zarr.hierarchy.Group] = None
-        self._cache_snp_genotypes: Dict[base_params.sample_set, zarr.hierarchy.Group] = (
-            dict()
-        )
-        self._cache_site_filters: Dict[base_params.site_mask, zarr.hierarchy.Group] = (
-            dict()
-        )
+        self._cache_snp_genotypes: Dict[
+            base_params.sample_set, zarr.hierarchy.Group
+        ] = dict()
+        self._cache_site_filters: Dict[
+            base_params.site_mask, zarr.hierarchy.Group
+        ] = dict()
         self._cache_site_annotations: Optional[zarr.hierarchy.Group] = None
         self._cache_locate_site_class: Dict[Tuple[Any, ...], np.ndarray] = dict()
 
@@ -1322,10 +1322,12 @@ class AnophelesSnpData(
         chunks: base_params.chunks,
     ) -> Dict[str, np.ndarray]:
         # Access SNP calls.
+        # N.B., snp_calls is a public API with @_check_types, which expects
+        # List[int] for sample_indices, not a tuple. Convert back here.
         ds_snps = self.snp_calls(
             region=region,
-            sample_sets=sample_sets,
-            sample_indices=sample_indices,
+            sample_sets=list(sample_sets) if sample_sets is not None else None,
+            sample_indices=list(sample_indices) if sample_indices is not None else None,
             site_mask=site_mask,
             site_class=site_class,
             cohort_size=cohort_size,
@@ -2073,10 +2075,12 @@ class AnophelesSnpData(
         # Note: this function uses sample_indices and should not expect a sample_query.
 
         # Access biallelic SNPs.
+        # N.B., biallelic_snp_calls is a public API with @_check_types, which
+        # expects List[int] for sample_indices, not a tuple. Convert back here.
         ds = self.biallelic_snp_calls(
             region=region,
-            sample_sets=sample_sets,
-            sample_indices=sample_indices,
+            sample_sets=list(sample_sets) if sample_sets is not None else None,
+            sample_indices=list(sample_indices) if sample_indices is not None else None,
             site_mask=site_mask,
             site_class=site_class,
             cohort_size=cohort_size,
