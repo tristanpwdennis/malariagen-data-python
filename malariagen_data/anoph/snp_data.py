@@ -1085,11 +1085,11 @@ class AnophelesSnpData(
         del site_mask
 
         # Convert lists to tuples to avoid CacheMiss "TypeError: unhashable type: 'list'".
-        prepared_regions_tuple: Tuple[Region, ...] = tuple(prepared_regions)
-        prepared_sample_sets_tuple: Optional[Tuple[str, ...]] = (
+        prepared_regions_tuple: base_params.regions_tuple = tuple(prepared_regions)
+        prepared_sample_sets_tuple: Optional[base_params.sample_sets_tuple] = (
             tuple(prepared_sample_sets) if prepared_sample_sets is not None else None
         )
-        prepared_sample_indices_tuple: Optional[Tuple[int, ...]] = (
+        prepared_sample_indices_tuple: Optional[base_params.sample_indices_tuple] = (
             tuple(prepared_sample_indices)
             if prepared_sample_indices is not None
             else None
@@ -1125,6 +1125,7 @@ class AnophelesSnpData(
             lx = []
             for r in regions:
                 ly = []
+                assert sample_sets is not None
                 for s in sample_sets:
                     y = self._snp_calls_for_contig(
                         contig=r.contig,
@@ -1405,6 +1406,15 @@ class AnophelesSnpData(
             sample_query_options=sample_query_options,
             sample_indices=sample_indices,
         )
+        # Convert lists to tuples to avoid CacheMiss "TypeError: unhashable type: 'list'".
+        sample_sets_prepped_tuple: Optional[base_params.sample_sets_tuple] = (
+            tuple(sample_sets_prepped) if sample_sets_prepped is not None else None
+        )
+        sample_indices_prepped_tuple: Optional[base_params.sample_indices_tuple] = (
+            tuple(sample_indices_prepped)
+            if sample_indices_prepped is not None
+            else None
+        )
         del sample_sets
         del sample_query
         del sample_query_options
@@ -1415,8 +1425,8 @@ class AnophelesSnpData(
         del site_mask
         params = dict(
             region=region_prepped,
-            sample_sets=sample_sets_prepped,
-            sample_indices=sample_indices_prepped,
+            sample_sets=sample_sets_prepped_tuple,
+            sample_indices=sample_indices_prepped_tuple,
             site_mask=site_mask_prepped,
             site_class=site_class,
             cohort_size=cohort_size,
@@ -1430,7 +1440,17 @@ class AnophelesSnpData(
 
         except CacheMiss:
             results = self._snp_allele_counts(
-                **params, inline_array=inline_array, chunks=chunks
+                inline_array=inline_array,
+                chunks=chunks,
+                region=region_prepped,
+                sample_sets=sample_sets_prepped_tuple,
+                sample_indices=sample_indices_prepped_tuple,
+                site_mask=site_mask_prepped,
+                site_class=site_class,
+                cohort_size=cohort_size,
+                min_cohort_size=min_cohort_size,
+                max_cohort_size=max_cohort_size,
+                random_seed=random_seed,
             )
             self.results_cache_set(name=name, params=params, results=results)
 
@@ -1967,6 +1987,16 @@ class AnophelesSnpData(
         prepared_region = self._prep_region_cache_param(region=region)
         prepared_site_mask = self._prep_optional_site_mask_param(site_mask=site_mask)
 
+        # Convert lists to tuples to avoid CacheMiss "TypeError: unhashable type: 'list'".
+        prepared_sample_sets_tuple: Optional[base_params.sample_sets_tuple] = (
+            tuple(prepared_sample_sets) if prepared_sample_sets is not None else None
+        )
+        prepared_sample_indices_tuple: Optional[base_params.sample_indices_tuple] = (
+            tuple(prepared_sample_indices)
+            if prepared_sample_indices is not None
+            else None
+        )
+
         # Delete original parameters to prevent accidental use.
         del sample_sets
         del sample_query
@@ -1979,8 +2009,8 @@ class AnophelesSnpData(
             region=prepared_region,
             n_snps=n_snps,
             thin_offset=thin_offset,
-            sample_sets=prepared_sample_sets,
-            sample_indices=prepared_sample_indices,
+            sample_sets=prepared_sample_sets_tuple,
+            sample_indices=prepared_sample_indices_tuple,
             site_mask=prepared_site_mask,
             site_class=site_class,
             cohort_size=cohort_size,
@@ -1997,7 +2027,21 @@ class AnophelesSnpData(
 
         except CacheMiss:
             results = self._biallelic_diplotypes(
-                inline_array=inline_array, chunks=chunks, **params
+                inline_array=inline_array,
+                chunks=chunks,
+                region=prepared_region,
+                sample_sets=prepared_sample_sets_tuple,
+                sample_indices=prepared_sample_indices_tuple,
+                site_mask=prepared_site_mask,
+                site_class=site_class,
+                cohort_size=cohort_size,
+                min_cohort_size=min_cohort_size,
+                max_cohort_size=max_cohort_size,
+                random_seed=random_seed,
+                n_snps=n_snps,
+                thin_offset=thin_offset,
+                min_minor_ac=min_minor_ac,
+                max_missing_an=max_missing_an,
             )
             self.results_cache_set(name=name, params=params, results=results)
 
@@ -2011,9 +2055,9 @@ class AnophelesSnpData(
         self,
         *,
         region: Union[dict, List[dict]],
-        sample_sets: Optional[Tuple[str, ...]],
-        sample_indices: Optional[Tuple[int, ...]],
-        site_mask: Optional[str],
+        sample_sets: Optional[base_params.sample_sets_tuple],
+        sample_indices: Optional[base_params.sample_indices_tuple],
+        site_mask: Optional[base_params.site_mask],
         site_class: Optional[base_params.site_class],
         cohort_size: Optional[base_params.cohort_size],
         min_cohort_size: Optional[base_params.min_cohort_size],
