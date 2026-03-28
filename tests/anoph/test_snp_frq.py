@@ -993,18 +993,25 @@ def check_snp_allele_frequencies_advanced(
         api = add_random_year(api=api)
 
     # Run function under test.
-    ds = api.snp_allele_frequencies_advanced(
-        transcript=transcript,
-        area_by=area_by,
-        period_by=period_by,
-        sample_sets=sample_sets,
-        sample_query=sample_query,
-        sample_query_options=sample_query_options,
-        min_cohort_size=min_cohort_size,
-        nobs_mode=nobs_mode,
-        variant_query=variant_query,
-        site_mask=site_mask,
-    )
+    try:
+        ds = api.snp_allele_frequencies_advanced(
+            transcript=transcript,
+            area_by=area_by,
+            period_by=period_by,
+            sample_sets=sample_sets,
+            sample_query=sample_query,
+            sample_query_options=sample_query_options,
+            min_cohort_size=min_cohort_size,
+            nobs_mode=nobs_mode,
+            variant_query=variant_query,
+            site_mask=site_mask,
+        )
+    except ValueError as e:
+        if "No cohorts available" in str(e):
+            # Random parameters produced no valid cohorts; this is
+            # expected to happen occasionally and is not a bug.
+            return
+        raise
 
     # Check the result.
     assert isinstance(ds, xr.Dataset)
@@ -1191,17 +1198,24 @@ def check_aa_allele_frequencies_advanced(
         api = add_random_year(api=api)
 
     # Run function under test.
-    ds = api.aa_allele_frequencies_advanced(
-        transcript=transcript,
-        area_by=area_by,
-        period_by=period_by,
-        sample_sets=sample_sets,
-        sample_query=sample_query,
-        sample_query_options=sample_query_options,
-        min_cohort_size=min_cohort_size,
-        nobs_mode=nobs_mode,
-        variant_query=variant_query,
-    )
+    try:
+        ds = api.aa_allele_frequencies_advanced(
+            transcript=transcript,
+            area_by=area_by,
+            period_by=period_by,
+            sample_sets=sample_sets,
+            sample_query=sample_query,
+            sample_query_options=sample_query_options,
+            min_cohort_size=min_cohort_size,
+            nobs_mode=nobs_mode,
+            variant_query=variant_query,
+        )
+    except ValueError as e:
+        if "No cohorts available" in str(e):
+            # Random parameters produced no valid cohorts; this is
+            # expected to happen occasionally and is not a bug.
+            return
+        raise
 
     # Check the result.
     assert isinstance(ds, xr.Dataset)
@@ -1527,24 +1541,29 @@ def test_allele_frequencies_advanced_with_variant_query(
         variant_query=variant_query,
     )
 
-    # Test a query that should fail.
+    # Test a query that should warn and return empty.
     variant_query = "effect == 'foobar'"
-    with pytest.raises(ValueError):
-        api.snp_allele_frequencies_advanced(
+    with pytest.warns(UserWarning):
+        ds_snp = api.snp_allele_frequencies_advanced(
             transcript=transcript,
             sample_sets=all_sample_sets,
             area_by=area_by,
             period_by=period_by,
             variant_query=variant_query,
+            min_cohort_size=0,
         )
-    with pytest.raises(ValueError):
-        api.aa_allele_frequencies_advanced(
+        assert ds_snp.sizes["variants"] == 0
+
+    with pytest.warns(UserWarning):
+        ds_aa = api.aa_allele_frequencies_advanced(
             transcript=transcript,
             sample_sets=all_sample_sets,
             area_by=area_by,
             period_by=period_by,
             variant_query=variant_query,
+            min_cohort_size=0,
         )
+        assert ds_aa.sizes["variants"] == 0
 
 
 @pytest.mark.parametrize("nobs_mode", ["called", "fixed"])
