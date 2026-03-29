@@ -1,5 +1,3 @@
-import random
-
 import bokeh.models
 import numpy as np
 import pandas as pd
@@ -114,13 +112,13 @@ def case_amin1_sim(amin1_sim_fixture, amin1_sim_api):
 def test_plot_heterozygosity_track(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    sample = random.choice(df_samples["sample_id"].to_list())
+    sample = str(np.random.choice(df_samples["sample_id"].to_list()))
 
     het_params = dict(
         sample=sample,
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         sample_set=sample_set,
         window_size=20_000,
     )
@@ -136,13 +134,13 @@ def test_plot_heterozygosity_track(fixture, api: AnophelesHetAnalysis):
 def test_plot_heterozygosity(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    sample = random.choice(df_samples["sample_id"].to_list())
+    sample = str(np.random.choice(df_samples["sample_id"].to_list()))
 
     het_params = dict(
         sample=sample,
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         sample_set=sample_set,
         window_size=20_000,
     )
@@ -158,13 +156,13 @@ def test_plot_heterozygosity(fixture, api: AnophelesHetAnalysis):
 def test_roh_hmm(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    sample = random.choice(df_samples["sample_id"].to_list())
+    sample = str(np.random.choice(df_samples["sample_id"].to_list()))
 
     roh_params = dict(
         sample=sample,
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         sample_set=sample_set,
         window_size=20_000,
     )
@@ -203,13 +201,13 @@ def test_roh_hmm_cache_name_resolution(fixture, api: AnophelesHetAnalysis):
 def test_plot_roh(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    sample = random.choice(df_samples["sample_id"].to_list())
+    sample = str(np.random.choice(df_samples["sample_id"].to_list()))
 
     roh_params = dict(
         sample=sample,
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         sample_set=sample_set,
         window_size=20_000,
     )
@@ -225,13 +223,13 @@ def test_plot_roh(fixture, api: AnophelesHetAnalysis):
 def test_sample_count_het(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
     df_samples = api.sample_metadata(sample_sets=sample_set)
-    sample = random.choice(df_samples["sample_id"].to_list())
+    sample = str(np.random.choice(df_samples["sample_id"].to_list()))
 
     het_params = dict(
         sample=sample,
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         sample_set=sample_set,
         window_size=20_000,
     )
@@ -253,10 +251,10 @@ def test_sample_count_het(fixture, api: AnophelesHetAnalysis):
 def test_cohort_heterozygosity(fixture, api: AnophelesHetAnalysis):
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
+    sample_set = str(np.random.choice(all_sample_sets))
 
     cohort_params = dict(
-        region=random.choice(api.contigs),
+        region=str(np.random.choice(api.contigs)),
         cohorts="taxon",
         sample_sets=sample_set,
         window_size=20_000,
@@ -288,8 +286,8 @@ def test_cohort_count_het_regression(fixture, api: AnophelesHetAnalysis):
 
     # Set up test parameters.
     all_sample_sets = api.sample_sets()["sample_set"].to_list()
-    sample_set = random.choice(all_sample_sets)
-    region = random.choice(api.contigs)
+    sample_set = str(np.random.choice(all_sample_sets))
+    region = str(np.random.choice(api.contigs))
     window_size = 20_000
 
     # Get sample metadata for a small cohort
