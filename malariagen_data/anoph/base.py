@@ -135,7 +135,7 @@ class AnophelesBase:
             storage_options = dict()
         try:
             self._fs, self._base_path = _init_filesystem(self._url, **storage_options)
-        except Exception as exc:  # pragma: no cover
+        except (OSError, ImportError) as exc:  # pragma: no cover
             raise IOError(
                 "An error occurred establishing a connection to the storage system. Please see the nested exception for more details."
             ) from exc
@@ -144,7 +144,7 @@ class AnophelesBase:
         try:
             with self.open_file(self._config_path) as f:
                 self._config = json.load(f)
-        except Exception as exc:  # pragma: no cover
+        except (OSError, json.JSONDecodeError) as exc:  # pragma: no cover
             if (isinstance(exc, OSError) and "forbidden" in str(exc).lower()) or (
                 getattr(exc, "status", None) == 403
             ):
@@ -234,6 +234,10 @@ class AnophelesBase:
         paths: Iterable[str],
         on_error: Literal["raise", "omit", "return"] = "return",
     ) -> Mapping[str, Union[bytes, Exception]]:
+        # Pydantic validate_call with strict=True converts Iterable into a
+        # generator, which can be exhausted. Convert to a tuple first.
+        paths = tuple(paths)
+
         # Check for any cached files.
         files = {
             path: data for path, data in self._cache_files.items() if path in paths
