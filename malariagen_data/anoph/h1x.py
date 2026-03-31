@@ -403,8 +403,16 @@ def _moving_h1x(ha, hb, size, start=0, stop=None, step=None):
         H1X values (sum of squares of joint haplotype frequencies).
     """
 
-    assert ha.ndim == hb.ndim == 2
-    assert ha.shape[0] == hb.shape[0]
+    if ha.ndim != 2 or hb.ndim != 2:
+        raise ValueError(
+            f"Expected ha and hb to be 2-dimensional, "
+            f"got ha.ndim={ha.ndim} and hb.ndim={hb.ndim}"
+        )
+    if ha.shape[0] != hb.shape[0]:
+        raise ValueError(
+            f"ha and hb must have the same number of variants, "
+            f"got ha.shape[0]={ha.shape[0]} and hb.shape[0]={hb.shape[0]}"
+        )
 
     # Construct moving windows.
     windows = allel.index_windows(ha, size, start, stop, step)

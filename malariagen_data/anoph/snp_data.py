@@ -114,7 +114,11 @@ class AnophelesSnpData(
     ) -> base_params.site_mask:
         if site_mask == base_params.DEFAULT:
             # Use whatever is the default site mask for this data resource.
-            assert self._default_site_mask is not None
+            if self._default_site_mask is None:
+                raise RuntimeError(
+                    "No default site mask configured. "
+                    "Please specify the 'site_mask' parameter explicitly."
+                )
             return self._default_site_mask
         elif site_mask in self.site_mask_ids:
             return site_mask
@@ -234,7 +238,11 @@ class AnophelesSnpData(
             return d
 
         else:
-            assert contig in self.contigs
+            if contig not in self.contigs:
+                raise ValueError(
+                    f"Contig {contig!r} not found. "
+                    f"Available contigs: {self.contigs}"
+                )
             root = self.open_site_filters(mask=mask)
             z = root[f"{contig}/variants/{field}"]
             d = _da_from_zarr(z, inline_array=inline_array, chunks=chunks)
@@ -336,7 +344,11 @@ class AnophelesSnpData(
 
         # Handle contig in the reference genome.
         else:
-            assert contig in self.contigs
+            if contig not in self.contigs:
+                raise ValueError(
+                    f"Contig {contig!r} not found. "
+                    f"Available contigs: {self.contigs}"
+                )
             root = self.open_snp_sites()
             z = root[f"{contig}/variants/{field}"]
             ret = _da_from_zarr(z, inline_array=inline_array, chunks=chunks)
@@ -445,7 +457,11 @@ class AnophelesSnpData(
             return da.concatenate(arrs)
 
         else:
-            assert contig in self.contigs
+            if contig not in self.contigs:
+                raise ValueError(
+                    f"Contig {contig!r} not found. "
+                    f"Available contigs: {self.contigs}"
+                )
             root = self.open_snp_genotypes(sample_set=sample_set)
             z = root[f"{contig}/calldata/{field}"]
             d = _da_from_zarr(z, inline_array=inline_array, chunks=chunks)
@@ -601,7 +617,11 @@ class AnophelesSnpData(
             return ret
 
         else:
-            assert contig in self.contigs
+            if contig not in self.contigs:
+                raise ValueError(
+                    f"Contig {contig!r} not found. "
+                    f"Available contigs: {self.contigs}"
+                )
             coords = dict()
             data_vars = dict()
             sites_root = self.open_snp_sites()
@@ -977,7 +997,11 @@ class AnophelesSnpData(
 
         # Handle contig in the reference genome.
         else:
-            assert contig in self.contigs
+            if contig not in self.contigs:
+                raise ValueError(
+                    f"Contig {contig!r} not found. "
+                    f"Available contigs: {self.contigs}"
+                )
 
             coords = dict()
             data_vars = dict()
@@ -1159,7 +1183,12 @@ class AnophelesSnpData(
                         inline_array=inline_array,
                         chunks=chunks,
                     )
-                    assert x.sizes["variants"] == loc_ann.shape[0]
+                    if x.sizes["variants"] != loc_ann.shape[0]:
+                        raise RuntimeError(
+                            f"Variants dimension mismatch: dataset has "
+                            f"{x.sizes['variants']} variants but annotation "
+                            f"mask has {loc_ann.shape[0]}"
+                        )
                     x = x.isel(variants=loc_ann)
 
                 lx.append(x)

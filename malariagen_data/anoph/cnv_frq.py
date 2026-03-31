@@ -597,7 +597,11 @@ class AnophelesCnvFrequencyAnalysis(AnophelesCnvData, AnophelesFrequencyAnalysis
             if nobs_mode == "called":
                 nobs[:, cohort_index] = np.repeat(cohort_n_called, 2)
             else:
-                assert nobs_mode == "fixed"
+                if nobs_mode != "fixed":
+                    raise RuntimeError(
+                        f"Internal error: expected nobs_mode='fixed', "
+                        f"got {nobs_mode!r}"
+                    )
                 nobs[:, cohort_index] = cohort.size
 
         debug("compute frequency")
