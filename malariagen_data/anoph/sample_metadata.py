@@ -1015,7 +1015,7 @@ class AnophelesSampleMetadata(AnophelesBase):
         samples_map.layout.width = width
 
         # Add markers.
-        count_factors = df_samples[count_by].dropna().sort_values().unique()
+        count_factors = df_pivot.columns.dropna().sort_values().unique()
         for _, row in df_pivot.reset_index().iterrows():
             title = (
                 f"Location: {row.location} ({row.latitude:.3f}, {row.longitude:.3f})"
