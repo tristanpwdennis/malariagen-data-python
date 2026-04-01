@@ -16,7 +16,7 @@ GCS_REGION_URLS = {
 
 TAXON_PALETTE = px.colors.qualitative.Plotly
 TAXON_COLORS = {
-    "dirus": TAXON_PALETTE[0],
+    "stephensi": TAXON_PALETTE[0],
 }
 
 XPEHH_GWSS_CACHE_NAME = "as1_xpehh_gwss_v1"
