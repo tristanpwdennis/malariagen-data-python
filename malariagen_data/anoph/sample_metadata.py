@@ -1015,7 +1015,11 @@ class AnophelesSampleMetadata(AnophelesBase):
         samples_map.layout.width = width
 
         # Add markers.
-        count_factors = df_pivot.columns.dropna().sort_values().unique()
+        taxa = [
+            c
+            for c in df_pivot.columns.dropna().sort_values().unique()
+            if c not in ["year", "sample_set", "contributor"]
+        ]
         for _, row in df_pivot.reset_index().iterrows():
             title = (
                 f"Location: {row.location} ({row.latitude:.3f}, {row.longitude:.3f})"
@@ -1028,13 +1032,13 @@ class AnophelesSampleMetadata(AnophelesBase):
             title += f"\nContributors: {row.contributor}"
             title += "\nNo. specimens: "
             all_n = 0
-            for factor in count_factors:
+            for taxon in taxa:
                 # Get the number of samples in this taxon
-                n = int(row[factor])
+                n = int(row[taxon])
                 # Count the number of samples in all taxa
                 all_n += n
                 if n > 0:
-                    title += f"{n} {factor}; "
+                    title += f"{n} {taxon}; "
             # Only show a marker when there are enough samples
             if all_n >= min_samples:
                 marker = ipyleaflet.Marker(
