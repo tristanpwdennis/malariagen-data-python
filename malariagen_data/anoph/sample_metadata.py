@@ -1030,7 +1030,7 @@ class AnophelesSampleMetadata(AnophelesBase):
             all_n = 0
             for factor in count_factors:
                 # Get the number of samples in this taxon
-                n = row[factor]
+                n = int(row[factor])
                 # Count the number of samples in all taxa
                 all_n += n
                 if n > 0:
