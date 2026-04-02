@@ -106,7 +106,9 @@ class AnophelesSnpData(
     def site_mask_def(self) -> str:
         """Return the default site mask identifier for this data resource."""
         if self._default_site_mask is None:
-            raise RuntimeError("No default site mask configured. Please specify the 'site_mask' parameter explicitly.")
+            raise RuntimeError(
+                "No default site mask configured. Please specify the 'site_mask' parameter explicitly."
+            )
         return self._default_site_mask
 
     @property
