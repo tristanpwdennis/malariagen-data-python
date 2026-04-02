@@ -103,6 +103,12 @@ class AnophelesSnpData(
         """
         return tuple(self.config.get("SITE_MASK_IDS", ()))  # ensure tuple
 
+    def site_mask_def(self) -> str:
+        """Return the default site mask identifier for this data resource."""
+        if self._default_site_mask is None:
+            raise RuntimeError("No default site mask configured. Please specify the 'site_mask' parameter explicitly.")
+        return self._default_site_mask
+
     @property
     def _site_annotations_zarr_path(self) -> str:
         return self.config["SITE_ANNOTATIONS_ZARR_PATH"]
@@ -218,7 +224,9 @@ class AnophelesSnpData(
         *,
         contig: str,
         mask: base_params.site_mask,
-        field: base_params.field,
+        # Field identifies which per-variant filter array to read (e.g. "filter_pass").
+        # Default kept for backwards compatibility with internal callers/tests.
+        field: base_params.field = "filter_pass",
         inline_array: base_params.inline_array,
         chunks: base_params.chunks,
     ) -> da.Array:
@@ -353,6 +361,22 @@ class AnophelesSnpData(
             z = root[f"{contig}/variants/{field}"]
             ret = _da_from_zarr(z, inline_array=inline_array, chunks=chunks)
             return ret
+
+    # Backwards compatible alias for internal callers/tests.
+    def snp_sites_for_contig(
+        self,
+        *,
+        contig: base_params.contig,
+        field: base_params.field,
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> da.Array:
+        return self._snp_sites_for_contig(
+            contig=contig,
+            field=field,
+            inline_array=inline_array,
+            chunks=chunks,
+        )
 
     def _snp_sites_for_region(
         self,
@@ -740,6 +764,40 @@ class AnophelesSnpData(
             ds[field] = "variants", data
 
         return ds
+
+    def _site_annotations_for_contig(
+        self,
+        *,
+        contig,
+        inline_array: base_params.inline_array,
+        chunks: base_params.chunks,
+    ) -> xr.Dataset:
+        """
+        Backwards compatible internal helper.
+
+        Raises a ValueError with a consistent message when the contig is unknown,
+        matching expectations in tests and existing error-handling behavior.
+        """
+        if contig in getattr(self, "virtual_contigs", {}):
+            contigs = self.virtual_contigs[contig]
+            ds_parts = [
+                self._site_annotations_raw(
+                    contig=c,
+                    inline_array=inline_array,
+                    chunks=chunks,
+                )
+                for c in contigs
+            ]
+            return _simple_xarray_concat(ds_parts, dim=DIM_VARIANT)
+
+        if contig not in self.contigs:
+            raise ValueError(
+                f"Contig {contig!r} not found. Available contigs: {self.contigs}"
+            )
+
+        return self._site_annotations_raw(
+            contig=contig, inline_array=inline_array, chunks=chunks
+        )
 
     @_check_types
     @doc(

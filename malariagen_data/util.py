@@ -711,9 +711,10 @@ def _parse_single_region(resource, region: single_region_param_type) -> Region:
     if region_from_feature is not None:
         return region_from_feature
 
-    raise ValueError(
-        f"Region {region!r} is not a valid contig, region string or feature ID."
-    )
+    # If we get here, the provided region is not a valid contig, coordinate
+    # string, or feature ID. For compatibility with existing callers/tests,
+    # treat unknown single contig strings as "contig not found".
+    raise ValueError(f"Contig {region!r} not found.")
 
 
 def _parse_multi_region(
