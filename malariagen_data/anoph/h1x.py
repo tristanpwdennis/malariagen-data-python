@@ -405,13 +405,14 @@ def _moving_h1x(ha, hb, size, start=0, stop=None, step=None):
 
     if ha.ndim != 2 or hb.ndim != 2:
         raise ValueError(
-            f"Expected ha and hb to be 2-dimensional, "
-            f"got ha.ndim={ha.ndim} and hb.ndim={hb.ndim}"
+            "Expected both haplotype arrays to be 2-dimensional "
+            "(n_variants, n_haplotypes), "
+            f"got ndim=({ha.ndim}, {hb.ndim})"
         )
     if ha.shape[0] != hb.shape[0]:
         raise ValueError(
-            f"ha and hb must have the same number of variants, "
-            f"got ha.shape[0]={ha.shape[0]} and hb.shape[0]={hb.shape[0]}"
+            "Expected both haplotype arrays to have the same number of variants "
+            f"(axis 0), got ({ha.shape[0]}, {hb.shape[0]})"
         )
 
     # Construct moving windows.

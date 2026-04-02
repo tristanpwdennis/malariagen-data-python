@@ -599,8 +599,8 @@ class AnophelesCnvFrequencyAnalysis(AnophelesCnvData, AnophelesFrequencyAnalysis
             else:
                 if nobs_mode != "fixed":
                     raise RuntimeError(
-                        f"Internal error: expected nobs_mode='fixed', "
-                        f"got {nobs_mode!r}"
+                        f"Internal error: expected nobs_mode='fixed', got {nobs_mode!r}. "
+                        "This should not happen; please open a GitHub issue."
                     )
                 nobs[:, cohort_index] = cohort.size
 

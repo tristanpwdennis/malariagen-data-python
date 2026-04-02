@@ -1580,21 +1580,25 @@ def _apply_allele_mapping(x, mapping, max_allele):
 
 def _dask_apply_allele_mapping(v, mapping, max_allele):
     if not isinstance(v, da.Array):
-        raise TypeError(f"Expected v to be a dask.array.Array, got {type(v).__name__}")
+        raise TypeError(
+            f"Expected input array to be a dask.array.Array, got {type(v).__name__}"
+        )
     if not isinstance(mapping, np.ndarray):
         raise TypeError(
             f"Expected mapping to be a numpy.ndarray, got {type(mapping).__name__}"
         )
     if v.ndim != 2:
-        raise ValueError(f"Expected v to be 2-dimensional, got {v.ndim} dimensions")
+        raise ValueError(
+            f"Expected input array to be 2-dimensional, got {v.ndim} dimensions"
+        )
     if mapping.ndim != 2:
         raise ValueError(
             f"Expected mapping to be 2-dimensional, got {mapping.ndim} dimensions"
         )
     if v.shape[0] != mapping.shape[0]:
         raise ValueError(
-            f"v and mapping must have same first dimension, "
-            f"got v.shape[0]={v.shape[0]} and mapping.shape[0]={mapping.shape[0]}"
+            "Expected input array and mapping to have the same first dimension, "
+            f"got {v.shape[0]} and {mapping.shape[0]}"
         )
     v = v.rechunk((v.chunks[0], -1))
     mapping = da.from_array(mapping, chunks=(v.chunks[0], -1))
@@ -1619,25 +1623,30 @@ def _genotype_array_map_alleles(gt, mapping):
             f"Expected mapping to be a numpy.ndarray, got {type(mapping).__name__}"
         )
     if gt.ndim != 3:
-        raise ValueError(f"Expected gt to be 3-dimensional, got {gt.ndim} dimensions")
+        raise ValueError(
+            f"Expected genotype calls array to be 3-dimensional, got {gt.ndim} dimensions"
+        )
     if mapping.ndim != 3:
         raise ValueError(
             f"Expected mapping to be 3-dimensional, got {mapping.ndim} dimensions"
         )
     if gt.shape[0] != mapping.shape[0]:
         raise ValueError(
-            f"gt and mapping must have same first dimension, "
-            f"got gt.shape[0]={gt.shape[0]} and mapping.shape[0]={mapping.shape[0]}"
+            "Expected genotype calls array and mapping to have the same first dimension, "
+            f"got {gt.shape[0]} and {mapping.shape[0]}"
         )
     if gt.shape[1] <= 0:
-        raise ValueError(f"Expected gt.shape[1] > 0, got {gt.shape[1]}")
+        raise ValueError(f"Expected genotype calls axis 1 to be > 0, got {gt.shape[1]}")
     if gt.shape[2] != 2:
-        raise ValueError(f"Expected gt.shape[2] == 2 (diploid), got {gt.shape[2]}")
+        raise ValueError(
+            f"Expected genotype calls axis 2 to be 2 (diploid), got {gt.shape[2]}"
+        )
     if gt.size > 0:
         # Block is not empty, can pass through to GenotypeArray.
         if gt.shape[0] <= 0:
             raise RuntimeError(
-                f"Internal error: gt.size > 0 but gt.shape[0] = {gt.shape[0]}"
+                f"Internal error: non-empty genotype block but axis 0 is {gt.shape[0]}. "
+                "Please open a GitHub issue."
             )
         m = mapping[:, 0, :]
         out = allel.GenotypeArray(gt).map_alleles(m).values
@@ -1645,7 +1654,8 @@ def _genotype_array_map_alleles(gt, mapping):
         # Block is empty so no alleles need to be mapped.
         if gt.shape[0] != 0:
             raise RuntimeError(
-                f"Internal error: gt.size == 0 but gt.shape[0] = {gt.shape[0]}"
+                f"Internal error: empty genotype block but axis 0 is {gt.shape[0]}. "
+                "Please open a GitHub issue."
             )
         out = gt
     return out

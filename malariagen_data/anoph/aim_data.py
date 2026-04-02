@@ -254,21 +254,24 @@ class AnophelesAimData(
             gn = np.take(gn, ix_sorted, axis=1)
             samples = np.take(samples, ix_sorted, axis=0)
 
+        species = aims.split("_vs_")
+
         # Set up colors for genotypes
         if palette is None:
             if self._aim_palettes is None:
                 raise RuntimeError(
-                    "AIM palettes have not been configured. "
-                    "Please provide a 'palette' parameter or configure AIM_PALETTES."
+                    "AIM palettes are not available for this data resource. "
+                    "Please provide the 'palette' parameter explicitly (4 colors)."
                 )
             palette = self._aim_palettes[aims]
             if len(palette) != 4:
                 raise RuntimeError(
-                    f"Expected AIM palette to have 4 colors, got {len(palette)}"
+                    "Expected AIM palette to have 4 colors "
+                    f"(missing, {species[0]}/{species[0]}, {species[0]}/{species[1]}, {species[1]}/{species[1]}), "
+                    f"got {len(palette)}"
                 )
             # Expect 4 colors, in the order:
             # missing, hom taxon 1, het, hom taxon 2
-        species = aims.split("_vs_")
 
         # Create subplots.
         fig = go_make_subplots(
