@@ -971,6 +971,8 @@ class AnophelesSampleMetadata(AnophelesBase):
             fill_value=0,
         )
 
+        taxa = df_pivot.columns.dropna().sort_values().unique()
+
         # Append aggregations to pivot.
         df_location_aggs = df_samples.groupby(location_composite_key).agg(
             {
@@ -1015,11 +1017,6 @@ class AnophelesSampleMetadata(AnophelesBase):
         samples_map.layout.width = width
 
         # Add markers.
-        taxa = [
-            c
-            for c in df_pivot.columns.dropna().sort_values().unique()
-            if c not in ["year", "sample_set", "contributor"]
-        ]
         for _, row in df_pivot.reset_index().iterrows():
             title = (
                 f"Location: {row.location} ({row.latitude:.3f}, {row.longitude:.3f})"
