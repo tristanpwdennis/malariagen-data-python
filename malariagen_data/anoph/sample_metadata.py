@@ -594,8 +594,16 @@ class AnophelesSampleMetadata(AnophelesBase):
     def _parse_aim_metadata(
         self, sample_set: str, data: Union[bytes, Exception]
     ) -> pd.DataFrame:
-        assert self._aim_metadata_columns is not None
-        assert self._aim_metadata_dtype is not None
+        if self._aim_metadata_columns is None:
+            raise RuntimeError(
+                "Internal error: AIM metadata columns are not configured. "
+                "This should not happen; please open a GitHub issue."
+            )
+        if self._aim_metadata_dtype is None:
+            raise RuntimeError(
+                "Internal error: AIM metadata dtypes are not configured. "
+                "This should not happen; please open a GitHub issue."
+            )
         if isinstance(data, bytes):
             # Parse CSV data but don't apply the dtype yet.
             df = pd.read_csv(io.BytesIO(data), na_values="")
