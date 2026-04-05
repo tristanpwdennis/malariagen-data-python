@@ -1,0 +1,112 @@
+sample_id,country_ISO,adm1_name,adm1_ISO,adm2_name,taxon,cohort_admin1_year,cohort_admin1_month,cohort_admin1_quarter,cohort_admin2_year,cohort_admin2_month,cohort_admin2_quarter
+VMF00316-0001,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0002,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0003,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0004,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0005,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0006,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0007,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0008,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0009,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0010,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0011,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0012,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0014,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0015,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0016,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0017,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0018,ETH,Afar,ET-AF,Zone 3,stephensi,ET-AF_step_2024,ET-AF_step_2024_11,ET-AF_step_2024_Q4,ET-AF_Zone-3_step_2024,ET-AF_Zone-3_step_2024_11,ET-AF_Zone-3_step_2024_Q4
+VMF00316-0019,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0020,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0021,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0022,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0023,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0024,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0025,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0026,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0027,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0028,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0029,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0030,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0031,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0032,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0033,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0034,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0035,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0036,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0037,ETH,Oromia,ET-OR,West Harerge,stephensi,ET-OR_step_2023,ET-OR_step_2023_10,ET-OR_step_2023_Q4,ET-OR_West-Harerge_step_2023,ET-OR_West-Harerge_step_2023_10,ET-OR_West-Harerge_step_2023_Q4
+VMF00316-0038,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0039,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0040,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0041,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0042,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0043,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0044,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0045,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0046,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0047,ETH,Dire Dawa,ET-DD,Dire Dawa,stephensi,ET-DD_step_2022,ET-DD_step_2022_08,ET-DD_step_2022_Q3,ET-DD_Dire-Dawa_step_2022,ET-DD_Dire-Dawa_step_2022_08,ET-DD_Dire-Dawa_step_2022_Q3
+VMF00316-0048,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0049,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0050,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0051,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0052,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0053,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0054,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0055,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0056,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0057,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0058,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0060,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0061,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0062,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0063,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0064,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0065,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0066,ETH,Somali,ET-SO,Shabelle,stephensi,ET-SO_step_2023,ET-SO_step_2023_10,ET-SO_step_2023_Q4,ET-SO_Shabelle_step_2023,ET-SO_Shabelle_step_2023_10,ET-SO_Shabelle_step_2023_Q4
+VMF00316-0067,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0068,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0069,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0070,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0071,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0072,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0073,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0074,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0075,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0078,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0079,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0080,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0081,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0082,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0083,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0084,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0085,ETH,Somali,ET-SO,Korahe,stephensi,ET-SO_step_2023,ET-SO_step_2023_01,ET-SO_step_2023_Q1,ET-SO_Korahe_step_2023,ET-SO_Korahe_step_2023_01,ET-SO_Korahe_step_2023_Q1
+VMF00316-0086,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0087,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0089,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0090,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0091,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0092,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0093,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0094,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0095,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0097,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2024,ET-OR_step_2024_08,ET-OR_step_2024_Q3,ET-OR_East-Shewa_step_2024,ET-OR_East-Shewa_step_2024_08,ET-OR_East-Shewa_step_2024_Q3
+VMF00316-0098,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0099,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0100,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0101,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0102,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0103,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0104,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0105,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0106,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0107,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0108,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0109,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0110,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0111,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0112,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0113,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0114,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0115,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0116,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1
+VMF00316-0117,ETH,Oromia,ET-OR,East Shewa,stephensi,ET-OR_step_2023,ET-OR_step_2023_01,ET-OR_step_2023_Q1,ET-OR_East-Shewa_step_2023,ET-OR_East-Shewa_step_2023_01,ET-OR_East-Shewa_step_2023_Q1

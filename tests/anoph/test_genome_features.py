@@ -67,10 +67,6 @@ def case_af1_sim(af1_sim_fixture, af1_sim_api):
     return af1_sim_fixture, af1_sim_api
 
 
-def case_adir1_sim(adir1_sim_fixture, adir1_sim_api):
-    return adir1_sim_fixture, adir1_sim_api
-
-
 def case_as1_sim(as1_sim_fixture, as1_sim_api):
     return as1_sim_fixture, as1_sim_api
 
@@ -116,10 +112,10 @@ def test_genome_features_default_attributes_af1(
     assert df_gf.columns.to_list() == expected_cols
 
 
-def test_genome_features_default_attributes_adir1(
-    adir1_sim_api: AnophelesGenomeFeaturesData,
+def test_genome_features_default_attributes_as1(
+    as1_sim_api: AnophelesGenomeFeaturesData,
 ):
-    df_gf = adir1_sim_api.genome_features()
+    df_gf = as1_sim_api.genome_features()
     assert isinstance(df_gf, pd.DataFrame)
     expected_cols = gff3_cols + ["ID", "Parent", "Note", "description"]
     assert df_gf.columns.to_list() == expected_cols

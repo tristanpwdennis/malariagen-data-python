@@ -15,6 +15,7 @@ from pytest_cases import filters as ft
 from malariagen_data import af1 as _af1
 from malariagen_data import ag3 as _ag3
 from malariagen_data import adir1 as _adir1
+from malariagen_data import amin1 as _amin1
 from malariagen_data import as1 as _as1
 
 
@@ -79,6 +80,23 @@ def adir1_sim_api(adir1_sim_fixture):
         gff_default_attributes=("ID", "Parent", "Note", "description"),
         default_site_mask="dirus",
         results_cache=adir1_sim_fixture.results_cache_path.as_posix(),
+    )
+
+
+@pytest.fixture
+def amin1_sim_api(amin1_sim_fixture):
+    return AnophelesSnpData(
+        url=amin1_sim_fixture.url,
+        public_url=amin1_sim_fixture.url,
+        config_path=_amin1.CONFIG_PATH,
+        major_version_number=_amin1.MAJOR_VERSION_NUMBER,
+        major_version_path=_amin1.MAJOR_VERSION_PATH,
+        pre=False,
+        gff_gene_type="protein_coding_gene",
+        gff_gene_name_attribute="Note",
+        gff_default_attributes=("ID", "Parent", "Note", "description"),
+        default_site_mask="minimus",
+        results_cache=amin1_sim_fixture.results_cache_path.as_posix(),
     )
 
 

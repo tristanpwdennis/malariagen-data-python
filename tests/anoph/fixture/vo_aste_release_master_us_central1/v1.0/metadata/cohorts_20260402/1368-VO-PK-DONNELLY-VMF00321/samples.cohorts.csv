@@ -1,0 +1,16 @@
+sample_id,country_ISO,adm1_name,adm1_ISO,adm2_name,taxon,cohort_admin1_year,cohort_admin1_month,cohort_admin1_quarter,cohort_admin2_year,cohort_admin2_month,cohort_admin2_quarter
+VMF00321-0001,PAK,Khyber Pakhtunkhwa,PK-KP,Orakzai,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Orakzai_step_2005,PK-KP_Orakzai_step_2005,PK-KP_Orakzai_step_2005
+VMF00321-0002,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005
+VMF00321-0003,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005
+VMF00321-0004,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005
+VMF00321-0005,PAK,Khyber Pakhtunkhwa,PK-KP,Orakzai,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Orakzai_step_2005,PK-KP_Orakzai_step_2005,PK-KP_Orakzai_step_2005
+VMF00321-0006,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0007,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0008,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0009,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0010,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0012,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005_04,PK-KP_step_2005_Q2,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005_04,PK-KP_Nowshera_step_2005_Q2
+VMF00321-0013,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005
+VMF00321-0014,PAK,Khyber Pakhtunkhwa,PK-KP,Nowshera,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005,PK-KP_Nowshera_step_2005
+VMF00321-0015,PAK,Khyber Pakhtunkhwa,PK-KP,Charsadda,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Charsadda_step_2005,PK-KP_Charsadda_step_2005,PK-KP_Charsadda_step_2005
+VMF00321-0017,PAK,Khyber Pakhtunkhwa,PK-KP,Charsadda,stephensi,PK-KP_step_2005,PK-KP_step_2005,PK-KP_step_2005,PK-KP_Charsadda_step_2005,PK-KP_Charsadda_step_2005,PK-KP_Charsadda_step_2005

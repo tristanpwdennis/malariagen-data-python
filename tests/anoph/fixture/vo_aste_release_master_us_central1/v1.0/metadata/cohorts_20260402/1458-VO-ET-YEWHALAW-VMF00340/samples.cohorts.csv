@@ -1,0 +1,24 @@
+sample_id,country_ISO,adm1_name,adm1_ISO,adm2_name,taxon,cohort_admin1_year,cohort_admin1_month,cohort_admin1_quarter,cohort_admin2_year,cohort_admin2_month,cohort_admin2_quarter
+VMF00340-0001,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0002,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0003,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0004,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0005,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0006,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0007,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0008,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0009,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0010,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0012,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0013,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0014,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0015,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0016,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0017,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0018,ETH,Afar,ET-AF,Zone 1,stephensi,ET-AF_step_2023,ET-AF_step_2023_01,ET-AF_step_2023_Q1,ET-AF_Zone-1_step_2023,ET-AF_Zone-1_step_2023_01,ET-AF_Zone-1_step_2023_Q1
+VMF00340-0019,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1
+VMF00340-0020,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1
+VMF00340-0021,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1
+VMF00340-0022,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1
+VMF00340-0023,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1
+VMF00340-0024,ETH,Amhara,ET-AM,West Gojam,stephensi,ET-AM_step_2023,ET-AM_step_2023_01,ET-AM_step_2023_Q1,ET-AM_West-Gojam_step_2023,ET-AM_West-Gojam_step_2023_01,ET-AM_West-Gojam_step_2023_Q1

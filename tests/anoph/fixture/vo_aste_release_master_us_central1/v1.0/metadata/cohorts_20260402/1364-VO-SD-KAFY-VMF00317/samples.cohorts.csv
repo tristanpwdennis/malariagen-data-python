@@ -1,0 +1,227 @@
+sample_id,country_ISO,adm1_name,adm1_ISO,adm2_name,taxon,cohort_admin1_year,cohort_admin1_month,cohort_admin1_quarter,cohort_admin2_year,cohort_admin2_month,cohort_admin2_quarter
+VMF00317-0001,SDN,White Nile,SD-NW,Kosti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Kosti_step_2022,SD-NW_Kosti_step_2022_07,SD-NW_Kosti_step_2022_Q3
+VMF00317-0002,SDN,Gezira,SD-GZ,Um Algura,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Um-Algura_step_2022,SD-GZ_Um-Algura_step_2022_07,SD-GZ_Um-Algura_step_2022_Q3
+VMF00317-0004,SDN,River Nile,SD-NR,Ad Damar,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Ad-Damar_step_2022,SD-NR_Ad-Damar_step_2022_07,SD-NR_Ad-Damar_step_2022_Q3
+VMF00317-0005,SDN,River Nile,SD-NR,Ad Damar,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Ad-Damar_step_2022,SD-NR_Ad-Damar_step_2022_07,SD-NR_Ad-Damar_step_2022_Q3
+VMF00317-0006,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0007,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0008,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0009,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0010,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0011,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0012,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0013,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0014,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0015,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0016,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0017,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0018,SDN,River Nile,SD-NR,Shendi,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Shendi_step_2022,SD-NR_Shendi_step_2022_07,SD-NR_Shendi_step_2022_Q3
+VMF00317-0019,SDN,River Nile,SD-NR,Shendi,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Shendi_step_2022,SD-NR_Shendi_step_2022_07,SD-NR_Shendi_step_2022_Q3
+VMF00317-0020,SDN,River Nile,SD-NR,Shendi,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Shendi_step_2022,SD-NR_Shendi_step_2022_07,SD-NR_Shendi_step_2022_Q3
+VMF00317-0021,SDN,River Nile,SD-NR,Shendi,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Shendi_step_2022,SD-NR_Shendi_step_2022_07,SD-NR_Shendi_step_2022_Q3
+VMF00317-0022,SDN,River Nile,SD-NR,Shendi,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Shendi_step_2022,SD-NR_Shendi_step_2022_07,SD-NR_Shendi_step_2022_Q3
+VMF00317-0023,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0024,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0025,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0026,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0027,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0028,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0029,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0030,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0031,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0032,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0033,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0034,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0035,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0036,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0037,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0038,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0039,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0040,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0041,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0042,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0043,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0044,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0045,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0046,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0047,SDN,Sennar,SD-SI,Sennar,stephensi,SD-SI_step_2022,SD-SI_step_2022_07,SD-SI_step_2022_Q3,SD-SI_Sennar_step_2022,SD-SI_Sennar_step_2022_07,SD-SI_Sennar_step_2022_Q3
+VMF00317-0048,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0049,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0050,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0051,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0052,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0053,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0054,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0055,SDN,Kassala,SD-KA,Reifi Kassla,stephensi,SD-KA_step_2022,SD-KA_step_2022_07,SD-KA_step_2022_Q3,SD-KA_Reifi-Kassla_step_2022,SD-KA_Reifi-Kassla_step_2022_07,SD-KA_Reifi-Kassla_step_2022_Q3
+VMF00317-0056,SDN,Gezira,SD-GZ,Al Kamlin,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Al-Kamlin_step_2022,SD-GZ_Al-Kamlin_step_2022_07,SD-GZ_Al-Kamlin_step_2022_Q3
+VMF00317-0057,SDN,Gezira,SD-GZ,Al Kamlin,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Al-Kamlin_step_2022,SD-GZ_Al-Kamlin_step_2022_07,SD-GZ_Al-Kamlin_step_2022_Q3
+VMF00317-0058,SDN,Gezira,SD-GZ,Al Kamlin,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Al-Kamlin_step_2022,SD-GZ_Al-Kamlin_step_2022_07,SD-GZ_Al-Kamlin_step_2022_Q3
+VMF00317-0059,SDN,Gezira,SD-GZ,Al Kamlin,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Al-Kamlin_step_2022,SD-GZ_Al-Kamlin_step_2022_07,SD-GZ_Al-Kamlin_step_2022_Q3
+VMF00317-0060,SDN,Gezira,SD-GZ,Al Kamlin,stephensi,SD-GZ_step_2022,SD-GZ_step_2022_07,SD-GZ_step_2022_Q3,SD-GZ_Al-Kamlin_step_2022,SD-GZ_Al-Kamlin_step_2022_07,SD-GZ_Al-Kamlin_step_2022_Q3
+VMF00317-0061,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0062,SDN,River Nile,SD-NR,Ad Damar,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Ad-Damar_step_2022,SD-NR_Ad-Damar_step_2022_07,SD-NR_Ad-Damar_step_2022_Q3
+VMF00317-0063,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0064,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0065,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0066,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0067,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0068,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0069,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0070,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0071,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0072,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0073,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0074,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0075,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0076,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0077,SDN,Khartoum,SD-KH,Karrari,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Karrari_step_2022,SD-KH_Karrari_step_2022_07,SD-KH_Karrari_step_2022_Q3
+VMF00317-0078,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0079,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0080,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0081,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0082,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0083,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0084,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0085,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0087,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0088,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0089,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0090,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0091,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0092,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0093,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0094,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0095,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0096,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0097,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0098,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0099,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0100,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0101,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0102,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0103,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0104,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_07,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_07,SD-RS_Haya_step_2022_Q3
+VMF00317-0105,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0106,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0107,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0108,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0109,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0110,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0111,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0112,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0113,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0114,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0115,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0117,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0118,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0119,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0120,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0121,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0122,SDN,River Nile,SD-NR,Ad Damar,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Ad-Damar_step_2022,SD-NR_Ad-Damar_step_2022_07,SD-NR_Ad-Damar_step_2022_Q3
+VMF00317-0123,SDN,River Nile,SD-NR,Ad Damar,stephensi,SD-NR_step_2022,SD-NR_step_2022_07,SD-NR_step_2022_Q3,SD-NR_Ad-Damar_step_2022,SD-NR_Ad-Damar_step_2022_07,SD-NR_Ad-Damar_step_2022_Q3
+VMF00317-0124,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0125,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0126,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0127,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0128,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0131,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0132,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0133,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0134,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0135,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0136,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0137,SDN,Northern,SD-NO,Dongola,stephensi,SD-NO_step_2022,SD-NO_step_2022_07,SD-NO_step_2022_Q3,SD-NO_Dongola_step_2022,SD-NO_Dongola_step_2022_07,SD-NO_Dongola_step_2022_Q3
+VMF00317-0138,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0139,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0140,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0141,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0142,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0143,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0144,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0145,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0146,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0147,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0148,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0149,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0150,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0151,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0152,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0153,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0154,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0155,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0156,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0157,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0158,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0159,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0160,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0161,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0162,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0163,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0164,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0165,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0166,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0167,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0168,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0169,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0170,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0171,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0172,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0173,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0174,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0175,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0176,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0177,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0178,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_07,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0179,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0180,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0181,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0182,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0183,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0184,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0185,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0186,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0187,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0188,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0189,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0190,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0191,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0192,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0193,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0194,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0195,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0196,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0197,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0198,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0199,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0200,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0201,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0202,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0203,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0204,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0205,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0206,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0207,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0208,SDN,White Nile,SD-NW,Tendalti,stephensi,SD-NW_step_2022,SD-NW_step_2022_07,SD-NW_step_2022_Q3,SD-NW_Tendalti_step_2022,SD-NW_Tendalti_step_2022_07,SD-NW_Tendalti_step_2022_Q3
+VMF00317-0209,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
+VMF00317-0210,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0211,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0212,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0213,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0214,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0215,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0216,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0217,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0218,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0219,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0220,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0221,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0222,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0223,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0224,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0225,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0226,SDN,Red Sea,SD-RS,Haya,stephensi,SD-RS_step_2022,SD-RS_step_2022_08,SD-RS_step_2022_Q3,SD-RS_Haya_step_2022,SD-RS_Haya_step_2022_08,SD-RS_Haya_step_2022_Q3
+VMF00317-0227,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0228,SDN,Red Sea,SD-RS,Port Sudan,stephensi,SD-RS_step_2023,SD-RS_step_2023_02,SD-RS_step_2023_Q1,SD-RS_Port-Sudan_step_2023,SD-RS_Port-Sudan_step_2023_02,SD-RS_Port-Sudan_step_2023_Q1
+VMF00317-0229,SDN,Gedaref,SD-GD,Basundah,stephensi,SD-GD_step_2022,SD-GD_step_2022_07,SD-GD_step_2022_Q3,SD-GD_Basundah_step_2022,SD-GD_Basundah_step_2022_07,SD-GD_Basundah_step_2022_Q3
+VMF00317-0230,SDN,Khartoum,SD-KH,Khartoum,stephensi,SD-KH_step_2022,SD-KH_step_2022_07,SD-KH_step_2022_Q3,SD-KH_Khartoum_step_2022,SD-KH_Khartoum_step_2022_07,SD-KH_Khartoum_step_2022_Q3
+VMF00317-0231,SDN,Khartoum,SD-KH,Um Durman,stephensi,SD-KH_step_2022,SD-KH_step_2022_08,SD-KH_step_2022_Q3,SD-KH_Um-Durman_step_2022,SD-KH_Um-Durman_step_2022_08,SD-KH_Um-Durman_step_2022_Q3
